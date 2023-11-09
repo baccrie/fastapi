@@ -17,7 +17,7 @@ class Post(Base):
 
     owner_id = Column(Integer, ForeignKey("users.id",
     ondelete="CASCADE"), nullable=False)
-    comment = Column(String, nullable=False)
+    # comment = Column(String, nullable=False)
 
     owner = relationship("User", backref='posts')
 
